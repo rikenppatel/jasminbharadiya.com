@@ -629,7 +629,7 @@ function titleSlide(node) {
 				.item-title
 					font-family: $font
 					font-weight: normal
-					font-size: 2.5vw
+					font-size: 2vw
 					z-index: 0
 					opacity: 1
 					letter-spacing: 0.1vw
