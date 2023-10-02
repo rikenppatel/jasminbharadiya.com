@@ -286,7 +286,7 @@ function titleSlide(node) {
 						<div class="roles">
 							<div class="wrapper">
 								<div in:maskSlideIn={{reverse: true}} out:maskSlideOut>
-									<p class="descriptor">Role</p>
+									<p class="descriptor">Keywords</p>
 								</div>
 								<ul>
 									{#each data[currentActive].roles as role, index}
@@ -393,12 +393,12 @@ function titleSlide(node) {
 				h1.title
 					position: relative
 					font-family: $titleFont
-					font-size: 7vw
+					font-size: 3vw
 					text-transform: lowercase
 					font-weight: normal
 					word-wrap: break-word
 					white-space: normal
-					line-height: 90%
+					line-height: 70%
 
 					&.breakTitleWords
 						display: inline-block

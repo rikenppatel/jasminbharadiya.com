@@ -123,7 +123,7 @@ async function introAnimations() {
                 <img src="{src}" bind:this={profilePicture} alt="Jasmin's Cover" class="profile-pic">
             {/await}
         </div>
-        <!-- Musab Hassan SVG Signature -->
+        <!-- Jasmin SVG Signature -->
         <!-- <svg id="signature" class="name-signature" x="0px" y="0px" viewBox="0 0 190 136.9" style="stroke: rgb(79, 78, 85);">
             <g>
                 <path
