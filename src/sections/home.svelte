@@ -141,7 +141,7 @@ function introAnimations() {
 			<div class="flex-wrapper second">
 				<h1 class = "title">
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord1}>Dr. Jasmin</div>
+						<div class="word" bind:this={titleWord1}>Jasmin</div>
 					</div><br>
 					<div class="title-mask">
 						<div class="word" bind:this={titleWord2}>Bharadiya</div>

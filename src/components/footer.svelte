@@ -97,7 +97,7 @@ async function introAnimations() {
                 {#if fetchedData.availablity_date == ""}
                     <p class="large-text" bind:this={statusElem}>
                         Follow for more things on AI!
-                        The Journey — AI By Dr. Jasmin Bharadiya
+                        The Journey — AI By Jasmin Bharadiya
                     </p>
                 {:else}
                     <p class="large-text" bind:this={statusElem}>
@@ -111,7 +111,7 @@ async function introAnimations() {
         <div class="credits-wrapper" bind:this={creditsElem}>
             <p class="year">© {currentYear}</p>
             <p class="credits">
-                designed and developed by Dr. Jasmin Bharadiya<br>
+                designed and developed by Jasmin Bharadiya<br>
             </p>
         </div>
     </div>
