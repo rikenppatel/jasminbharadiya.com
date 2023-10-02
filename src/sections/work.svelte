@@ -11,12 +11,12 @@ import { loadImage } from "../utils";
 /* Slider calculations and rendering */
 class WorkSlider {
 
-	currentMouseX = 0; 
+	currentMouseX = 0;
 	initialMouseX = 0;
-	currentPosition = 0; 
-	targetPosition = 0; 
+	currentPosition = 0;
+	targetPosition = 0;
 	initialPosition = 0;
-	offsetSpeed = 5000; 
+	offsetSpeed = 5000;
 	lerpSpeed = 0.1;
 
     onHold = e => {
@@ -37,9 +37,9 @@ class WorkSlider {
     onRelease() {
         isWorkScroll.set(false);
     }
- 
+
     onMouseMove = e => {
-    	if (!isMouseDown) return; 
+    	if (!isMouseDown) return;
 		this.currentMouseX = e.clientX;
 
         let diff = (this.currentMouseX - this.initialMouseX) * -1;
@@ -58,7 +58,7 @@ class WorkSlider {
 
         // Lerp easing
         this.currentPosition = this.lerp(this.currentPosition, this.targetPosition, this.lerpSpeed);
-		
+
         workScrollSpeed.set(Math.round((this.currentPosition - this.targetPosition) * 100) / 100); // Set Svelte Store value for the Canvas effect
         listContainer.style.transform = `translate3d(${ Math.round(this.currentPosition * 100) / 100 }px, 0px, 0px)`;
 
@@ -86,7 +86,7 @@ let data; // JSON Work data fetched from the data.json file
 // Intersection observer and promise to enable scroll activated animations
 let inViewResolve;
 let inView = new Promise((resolve) => inViewResolve = resolve);
-let animationObserver = new IntersectionObserver((entries) => { 
+let animationObserver = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			inViewResolve();
@@ -152,7 +152,7 @@ function titleSlide(node) {
 
 
 <div id="content-container" class="work-click-area" style = "margin-top: 30vh;" bind:this="{workContainer}">
-	<div class="content-wrapper" 
+	<div class="content-wrapper"
 		on:mousedown|preventDefault={slider.onHold}
 		on:mouseup={slider.onRelease}
 		on:mouseleave={slider.onRelease}
@@ -162,17 +162,17 @@ function titleSlide(node) {
 		use:workListIntro={{ promise: inView }}
 	>
 		<div class:mobile={$isMobile}>
-			<ul class="work-list" 
-				bind:this={listContainer} 
+			<ul class="work-list"
+				bind:this={listContainer}
 				class:hold={isMouseDown}>
 
 				<!-- Work items -->
 				{#await workItemsFetch then items}
 					{#each items as item, i}
 						<li use:workImageIntro={{ promise: inView, delay: i*30 }}>
-							<div class="list-item clickable passive" 
-								class:ambient="{ currentActive !== i && currentActive !== null }" 
-								class:active="{ currentActive === i }" 
+							<div class="list-item clickable passive"
+								class:ambient="{ currentActive !== i && currentActive !== null }"
+								class:active="{ currentActive === i }"
 								bind:this={ workItems[i] }>
 
 								<div class="img-wrapper">
@@ -182,7 +182,7 @@ function titleSlide(node) {
 								</div>
 								{#await inView then _}
 									<div class="text-top-wrapper" class:hidden={currentActive != null || isMouseDown}>
-										<p 
+										<p
 											class="item-index"
 											in:maskSlideIn={{
 												delay: (i*30)+100,
@@ -192,18 +192,18 @@ function titleSlide(node) {
 										</p>
 									</div>
 									<div class="text-wrapper" class:hidden={currentActive != null || isMouseDown}>
-										<h1 
-											class="item-title" 
+										<h1
+											class="item-title"
 											>
 											<span in:maskSlideIn={{
-												duration: 900, 
+												duration: 900,
 												delay: (i*30)+300,
-												reverse: true 
+												reverse: true
 											}}>
 												{item.title}
 											</span>
 										</h1>
-										<div 
+										<div
 											class="button item-link"
 											on:click={() => toggleActiveItem(i)}
 											in:maskSlideIn={{
@@ -243,11 +243,11 @@ function titleSlide(node) {
 							</h6>
 						</div>
 					</div>
-					
+
 					<div class="mid-align">
-						<h1 class="title" 
+						<h1 class="title"
 							use:titleSlide
-							out:letterSlideOut 
+							out:letterSlideOut
 							use:adjustLineHeight
 							class:breakTitleWords
 							on:introend={() => setTimeout(() => breakTitleWords = true, 100)}
@@ -256,16 +256,16 @@ function titleSlide(node) {
 							{data[currentActive].title}
 						</h1>
 						<div class="close-button-wrapper" on:click={() => toggleActiveItem(currentActive)}>
-							<div 
+							<div
 								class ="close-button"
-								in:maskSlideIn={{ reverse: true }} 
+								in:maskSlideIn={{ reverse: true }}
 								out:maskSlideOut>
 
 								&times;
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="bottom-align">
 						<div>
 							<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
@@ -330,7 +330,7 @@ function titleSlide(node) {
 		width: 100%
 		height: 100%
 		overflow-x: auto
-	
+
 	*
 		-webkit-touch-callout: none
 		-webkit-user-select: none
@@ -384,7 +384,7 @@ function titleSlide(node) {
 						height: 1.5px
 						background-color: white
 
-			.mid-align	
+			.mid-align
 				display: flex
 				flex-direction: row
 				align-items: center
@@ -425,7 +425,7 @@ function titleSlide(node) {
 						.close-button
 							font-size: 5vh
 
-			
+
 			.bottom-align
 				display: flex
 				flex-direction: row
@@ -440,7 +440,7 @@ function titleSlide(node) {
 					font-size: 1.3vh
 					width: 60%
 
-				.roles 
+				.roles
 					display: flex
 					flex-direction: column
 					align-items: center
@@ -454,7 +454,7 @@ function titleSlide(node) {
 						font-size: 1.4vh
 
 
-					ul 
+					ul
 						list-style-type: none
 						display: flex
 						flex-direction: column
@@ -471,7 +471,7 @@ function titleSlide(node) {
 					display: flex
 					flex-direction: column
 					align-items: center
-						
+
 					div.line
 						content: ""
 						position: absolute
@@ -503,7 +503,7 @@ function titleSlide(node) {
 					.links
 						margin: 2vh 0
 						align-items: flex-start
-						
+
 						.button
 							font-size: 2vh
 							position: relative
@@ -578,7 +578,7 @@ function titleSlide(node) {
 				width: 85%
 				margin-right: 15%
 				box-shadow: 3px 9px 18px rgba(0, 0, 0, 0.2)
-				
+
 				img
 					height: 110%
 					width: 110%

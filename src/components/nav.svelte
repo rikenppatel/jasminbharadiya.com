@@ -20,18 +20,18 @@ onMount(async () => {
 	introAnimations();
 });
 
-$: mobileTransitionSwitcher = 
-	mobileActive ? 
-	maskSlideIn : 
-	(node, _) => { 
-		let out = maskSlideIn(node, {reverse: true}); 
-		return { 
+$: mobileTransitionSwitcher =
+	mobileActive ?
+	maskSlideIn :
+	(node, _) => {
+		let out = maskSlideIn(node, {reverse: true});
+		return {
 			tick: t => {
 				let reversedT = 1 - t;
 				out.tick(reversedT);
 
 				if (t == 1) out.tick(1);
-			} 
+			}
 		}
 	};
 
@@ -41,7 +41,7 @@ function navigate(anchor) {
 		top: anchor.offsetTop - (window.innerHeight / 5),
 		behavior: "smooth"
 	});
-	mobileActive = false; 
+	mobileActive = false;
 }
 
 function introAnimations() {
@@ -68,15 +68,15 @@ function introAnimations() {
 <div class="nav-wrapper" style="transform: translate(0px);">
 	<!-- Logo -->
 	<div class="flex-wrapper ico" style="z-index: 21;">
-		<img 
-			bind:this={logoElem} 
+		<img
+			bind:this={logoElem}
 			src="assets/imgs/logo.svg"
 			class = "logo-icon clickable"
 			alt="Logo"
 			draggable="false"
 			on:click={() => navigate($homeAnchor)}>
 	</div>
-	
+
 	<div class="flex-wrapper">
 		<!-- Mobile and desktop nav menu -->
 		<div class="wrapper" class:mobileActive>
@@ -86,16 +86,16 @@ function introAnimations() {
 					<div on:click={() => navigate($homeAnchor)} in:mobileTransitionSwitcher={{ delay: 200 }}>Home</div>
 				</li>
 				<li bind:this={workWrapperElem}>
-					<div on:click={() => navigate($workAnchor)} in:mobileTransitionSwitcher={{ delay: 250 }}>Work</div>
+					<div on:click={() => navigate($workAnchor)} in:mobileTransitionSwitcher={{ delay: 250 }}>Research</div>
 				</li>
 				<li bind:this={aboutWrapperElem}>
 					<div on:click={() => navigate($aboutAnchor)} in:mobileTransitionSwitcher={{ delay: 300 }}>About</div>
 				</li>
 				<li class="mobile">
-					<a href="mailto:musabhassan04@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
+					<a href="mailto:jasminbharadiya92@gmail.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
 				</li>
 				<li bind:this={githubElem}>
-					<a href="https://github.com/Musab-Hassan" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Github</a>
+					<a href="https://medium.com/@jasminbharadiya" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Medium</a>
 				</li>
 				{/key}
 			</ul>
@@ -103,9 +103,9 @@ function introAnimations() {
 
 		<!-- Mobile hambuger menu -->
 		<div class="mask">
-			<div class="hb-button clickable" 
-				bind:this={mobileMenuElem} 
-				on:click={() => mobileActive = !mobileActive} 
+			<div class="hb-button clickable"
+				bind:this={mobileMenuElem}
+				on:click={() => mobileActive = !mobileActive}
 				class:mobileActive>
 
 				<div class="hb">
@@ -165,7 +165,7 @@ function introAnimations() {
 				&.mobile
 					display: none
 
-				div 
+				div
 					display: inline-block
 					cursor: pointer
 
@@ -221,7 +221,7 @@ function introAnimations() {
 				&:not(:last-child)
 					border-bottom: 1px solid rgba(255, 255, 255, 0.3)
 
-				div 
+				div
 					display: inline-block
 					cursor: pointer
 

@@ -1,21 +1,23 @@
 [
     {
         "id": "lcml",
-        "title": "Life-Cycle Managment Laboratory",
+        "title": "Machine Learning and AI in Business Intelligence: Trends and Opportunities",
         "details": {
-            "description": "A single page web application for managing research and administrative content for LCML at the University of British Columbia",
-            "summary": "Web Application"
+            "description": "The integration of machine learning and artificial intelligence (AI) in business intelligence has brought forth a plethora of trends and opportunities. These cutting-edge technologies have revolutionized how businesses analyze data, gain insights, and make informed decisions. ",
+            "summary": "ML and AI in Business Intelligence"
         },
-        "date": "April 2022",
+        "date": "June 2023",
         "roles": [
-            "UI/UX Designer",
-            "Full-Stack Web Developer"
+            "Artificial Intelligence",
+            "Machine Learning",
+            "sentiment analysis",
+            "Deep Learning"
         ],
         "links": [
             {
                 "type": "web",
                 "text": "Visit Site",
-                "link": "https://lcml.engineering.ok.ubc.ca"
+                "link": "https://ijcjournal.org/index.php/InternationalJournalOfComputer/article/view/2087"
             }
         ]
     },

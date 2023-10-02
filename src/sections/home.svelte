@@ -111,7 +111,7 @@ function introAnimations() {
 		<div class="flex">
 			<div class="flex-wrapper first">
 
-				<svg id="signature" class="h-signature" x="0px" y="0px" viewBox="0 0 190 136.9">
+				<!-- <svg id="signature" class="h-signature" x="0px" y="0px" viewBox="0 0 190 136.9">
 					<g>
 						<path
 							bind:this={path1}
@@ -134,7 +134,7 @@ function introAnimations() {
 							style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;"
 							d="M122,74.4c0,0-5.9-8-17.1-6.7c-11.1,1.3-20.2,11.3-21.1,12.6c-0.9,1.3-10,9.6,2.2,15s38.9-7.2,38.9-7.2s17.8-10,18.9-10s-4.6,5.9-4.3,7.2c0.4,1.3,2.8,2,7.2-1.5c1-0.8,17.2-0.8,22.2,1c1.9,0.7,3.5-0.2,5-1.4c1-0.8,9.4,2,9.4,2"/>
 					</g>
-				</svg>
+				</svg> -->
 
 			</div>
 
