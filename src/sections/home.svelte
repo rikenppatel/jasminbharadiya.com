@@ -37,25 +37,25 @@ function introAnimations() {
 		duration: 1000,
 		delay: 500,
 		easing: 'cubic-bezier(.72,.3,.25,1)',
-		fill: 'forwards' 
+		fill: 'forwards'
 	});
 	path2.animate(animation, {
 		duration: 300,
 		delay: 1500,
 		easing: 'cubic-bezier(.47,.41,.26,1)',
-		fill: 'forwards' 
+		fill: 'forwards'
 	});
 	path3.animate(animation, {
 		duration: 200,
 		delay: 1800,
 		easing: 'cubic-bezier(.47,.41,.26,1)',
-		fill: 'forwards' 
+		fill: 'forwards'
 	});
 	path4.animate(animation, {
 		duration: 1000,
 		delay: 2000,
 		easing: 'cubic-bezier(.47,.41,.26,1)',
-		fill: 'forwards' 
+		fill: 'forwards'
 	});
 
 
@@ -137,19 +137,19 @@ function introAnimations() {
 				</svg>
 
 			</div>
-			
+
 			<div class="flex-wrapper second">
 				<h1 class = "title">
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord1}>Musab</div>
-					</div><br> 
+						<div class="word" bind:this={titleWord1}>Dr. Jasmin</div>
+					</div><br>
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord2}>Hassan</div>
+						<div class="word" bind:this={titleWord2}>Bharadiya</div>
 					</div>
 				</h1>
 				<div class="occupation mask">
 					<p class = "paragraph" bind:this={shortDetails}>
-						web developer from british columbia, canada
+						MLOps Enthusiast | AI/ML Researcher | IEEE Member | IEEE Women in Engineering Member
 					</p>
 				</div>
 				<div class="wrapper action-mask">
@@ -213,7 +213,7 @@ function introAnimations() {
 			justify-content: center
 
 			&.second
-				margin-right: 5vw 
+				margin-right: 5vw
 				justify-content: flex-end
 
 			h1
@@ -311,7 +311,7 @@ function introAnimations() {
 		justify-content: center !important
 		width: 100% !important
 
-		.flex-wrapper 
+		.flex-wrapper
 			&.first
 				display: none !important
 
@@ -336,7 +336,7 @@ function introAnimations() {
 	.path-1
 		stroke-dasharray: 365
 		stroke-dashoffset: 365
-	
+
 	.path-2
 		stroke-dasharray: 85
 		stroke-dashoffset: 85
@@ -353,13 +353,13 @@ function introAnimations() {
 @keyframes scrollArrowLoop
 	0%
 		transform: translateY(-120%)
-	
+
 	30%
 		transform: translateY(0%)
-	
+
 	70%
 		transform: translateY(0%)
-	
+
 	100%
 		transform: translateY(120%)
 

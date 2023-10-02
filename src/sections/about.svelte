@@ -49,7 +49,7 @@ function section1IntroAnimations() {
 	});
 
 	// Run animations when intersection obeserver detects aboutSection1Container to be in scroll view
-	let observer = new IntersectionObserver((entries) => { 
+	let observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 
@@ -58,28 +58,28 @@ function section1IntroAnimations() {
 				link1Animate.anime();
 				link2Animate.anime();
 				profilePictureAnimate.anime("easeInOutQuint");
-				
+
 				observer.disconnect();
 			}
 		});
 	}, { root: null, threshold: 0.4 });
-	
+
 	observer.observe(aboutSection1Container);
 }
 
 // Skills and awards section
 function section2IntroAnimations() {
 	// Resolve animations promise when intersection obeserver detects aboutSection2Container to be in scroll view
-	let observer = new IntersectionObserver((entries) => { 
+	let observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				section2InViewResolve();
-				
+
 				observer.disconnect();
 			}
 		});
 	}, { root: null, threshold: 0.4 });
-	
+
 	observer.observe(aboutSection2Container);
 }
 
@@ -88,19 +88,23 @@ function section2IntroAnimations() {
 <div id="content-container" class="about" bind:this={aboutSection1Container}>
 	<div class="content-wrapper">
 		<h1 class="title" bind:this={title}>
-			The Name's<br>Musab
+			The Name's<br>Jasmin
 		</h1>
 		<div bind:this={paragraph}>
 			<p class="paragraph">
-				I'm a web developer from British Columbia, Canada. I specialize in designing and developing web experiences<br><br>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Let's talk over email.
+				I'm an innovative researcher in the field of MLOps, with a keen interest in exploring the latest developments in artificial intelligence, machine learning, and algorithms. <br><br> I'm also an accomplished speaker and an advocate for the responsible use of technology. <br><br>
+				I'm passionate about inspiring young women and minorities to pursue careers in technology and has served as a mentor to numerous students throughout her career.
 			</p>
 		</div>
 		<div class="social-button-wrapper">
 			<div bind:this={emailLink}>
-				<span class="button"><a href="mailto:musabhassan04@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
+				<span class="button"><a href="mailto:jasminbharadiya92@gmail.com" target="_blank" class="clickable sublink link">Email Me</a></span>
 			</div>
 			<div bind:this={githubLink}>
-				<span class="button" bind:this={githubLink}><a href="https://github.com/Musab-Hassan" target="_blank" class="clickable sublink link">Github</a></span>
+				<span class="button" bind:this={githubLink}><a href="https://orcid.org/0009-0002-4264-6005" target="_blank" class="clickable sublink link">Checkout my latest Research</a></span>
+			</div>
+			<div bind:this={githubLink}>
+				<span class="button" bind:this={githubLink}><a href="https://medium.com/@jasminbharadiya" target="_blank" class="clickable sublink link">I write blogs on Medium</a></span>
 			</div>
 		</div>
 	</div>
@@ -123,8 +127,8 @@ function section2IntroAnimations() {
 				<div in:letterSlideIn={{ initDelay: 550 }}>
 					Front-end
 				</div>
-				<div 
-					class="flex-item" 
+				<div
+					class="flex-item"
 					in:maskSlideIn={{ delay: 600 }}>
 					<img src="assets/imgs/svg-icons/angular.svg" alt="angular">
 					<img src="assets/imgs/svg-icons/svelte.svg" alt="svelte">
@@ -155,7 +159,7 @@ function section2IntroAnimations() {
 				<div in:letterSlideIn={{ initDelay: 850 }}>
 					Design
 				</div>
-				<div class="flex-item" 
+				<div class="flex-item"
 					in:maskSlideIn={{ delay: 900 }}>
 					<img src="assets/imgs/svg-icons/illustrator.svg" alt="adobe illustrator">
 					<img src="assets/imgs/svg-icons/xd.svg" alt="adobe xd">
@@ -249,7 +253,7 @@ function section2IntroAnimations() {
 				right: 115%
 				top: 15%
 				background-color: white
-				
+
 
 		.social-button-wrapper
 			font-size: 3vh

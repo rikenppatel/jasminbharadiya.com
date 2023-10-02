@@ -6,7 +6,7 @@ import { dataFetch } from "../store"
 
 let footerContainer;
 let logoElem, creditsElem, statusElem, fullEmailLinkElem;
-let signaturePath1, signaturePath2, signaturePath3, signaturePath4; 
+let signaturePath1, signaturePath2, signaturePath3, signaturePath4;
 
 let currentYear = new Date().getFullYear();
 
@@ -21,7 +21,7 @@ async function introAnimations() {
     const creditsAnimate = maskSlideIn(creditsElem, { delay: 150 });
 
     // Intersection observer to run animations when footer is in scroll view
-    let animationObserver = new IntersectionObserver((entries) => { 
+    let animationObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
 
@@ -38,25 +38,25 @@ async function introAnimations() {
                     duration: 1000,
                     delay: 0,
                     easing: 'cubic-bezier(.72,.3,.25,1)',
-                    fill: 'forwards' 
+                    fill: 'forwards'
                 });
                 signaturePath2.animate(animation, {
                     duration: 300,
                     delay: 1000,
                     easing: 'cubic-bezier(.47,.41,.26,1)',
-                    fill: 'forwards' 
+                    fill: 'forwards'
                 });
                 signaturePath3.animate(animation, {
                     duration: 200,
                     delay: 1300,
                     easing: 'cubic-bezier(.47,.41,.26,1)',
-                    fill: 'forwards' 
+                    fill: 'forwards'
                 });
                 signaturePath4.animate(animation, {
                     duration: 1000,
                     delay: 1500,
                     easing: 'cubic-bezier(.47,.41,.26,1)',
-                    fill: 'forwards' 
+                    fill: 'forwards'
                 });
 
                 animationObserver.disconnect();
@@ -90,21 +90,22 @@ async function introAnimations() {
             {#await dataFetch then fetchedData}
                 {#if fetchedData.availablity_date == ""}
                     <p class="large-text" bind:this={statusElem}>
-                        i am currently accepting freelance work, <br>you may reach me on my email.
+                        Follow for more things on AI!
+                        The Journey — AI By Dr. Jasmin Bharadiya
                     </p>
                 {:else}
                     <p class="large-text" bind:this={statusElem}>
-                        i am available for freelance work after <br> {fetchedData.availablity_date}.
+                        <!-- i am available for freelance work after <br> {fetchedData.availablity_date}. -->
                     </p>
                 {/if}
             {/await}
-            <a class="button large-text" bind:this={fullEmailLinkElem} href="mailto:musabhassan04@gmail.com" target="_blank">musabhassan04@gmail.com</a>
+            <a class="button large-text" bind:this={fullEmailLinkElem} href="mailto:jasminbharadiya92@gmail.com" target="_blank">jasminbharadiya92@gmail.com</a>
         </div>
-        
+
         <div class="credits-wrapper" bind:this={creditsElem}>
             <p class="year">© {currentYear}</p>
             <p class="credits">
-                designed and developed by musab hassan<br>this webste is open source on github
+                designed and developed by Dr. Jasmin Bharadiya<br>
             </p>
         </div>
     </div>
@@ -220,7 +221,7 @@ async function introAnimations() {
     .path-1
         stroke-dasharray: 365
         stroke-dashoffset: 365
-    
+
     .path-2
         stroke-dasharray: 85
         stroke-dashoffset: 85
