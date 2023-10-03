@@ -360,7 +360,7 @@ function titleSlide(node) {
 
 			.top-align
 				.wrapper
-					display: inline-flex
+					display: flex
 					flex-direction: row
 					align-items: center
 					justify-content: left
@@ -379,8 +379,8 @@ function titleSlide(node) {
 						font-size: 2.1vh
 
 					span.line
-						width: 300%
-						margin: 0 10%
+						width: 15%
+						margin: 0 1%
 						height: 1.5px
 						background-color: white
 
