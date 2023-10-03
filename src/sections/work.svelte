@@ -632,10 +632,6 @@ function titleSlide(node) {
 					font-size: 2vw
 					z-index: 0
 					opacity: 1
-					letter-spacing: 0.1vw
-					line-height: 110%
-					word-spacing: 80vw
-					text-transform: lowercase
 					word-wrap: break-word
 					white-space: normal
 
