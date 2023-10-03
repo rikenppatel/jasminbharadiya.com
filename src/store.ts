@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { writable, derived } from "svelte/store";
 
 let fetchJsonData = (sourceFile: string) => new Promise(async (resolve: (data: any[]) => void) => {
     let data = await (await fetch(sourceFile)).json();
@@ -17,12 +17,21 @@ export let homeAnchor = writable(null);
 export let workAnchor = writable(null);
 export let aboutAnchor = writable(null);
 
+export const firstName: Writable<string> = writable("jasmin");
+export const lastName: Writable<string> = writable("bharadiya");
+
 export let imgPromises = writable([]); // Array of asynchronous image promises
 export let loadPageResolve;
 export let loadPagePromise = new Promise((resolve) => loadPageResolve = resolve);
 export let loaderAnimationResolve;
 export let loaderAnimationPromise = new Promise((resolve) => loaderAnimationResolve = resolve);
 
+export function capitalize(store) {
+    return derived(store, $value => {
+        const capitalized = ($value as string).charAt(0).toUpperCase() + ($value as string).slice(1);
+        return capitalized;
+    });
+}
 
 // Fetch work data from the work-data.json file
 export const workItemsFetch = fetchJsonData("work-data.json");

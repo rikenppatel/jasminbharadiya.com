@@ -2,7 +2,7 @@
 
 import { onMount } from "svelte";
 import { letterSlideIn, maskSlideIn } from "../animations";
-import { aboutAnchor, loadPagePromise, slickScrollInstance } from "../store";
+import { aboutAnchor, loadPagePromise, slickScrollInstance, firstName, capitalize } from "../store";
 import { loadImage } from "../utils";
 
 // DOM Node binds
@@ -14,6 +14,7 @@ let title, paragraph, profilePicture;
 // Promise which when resolved will trigger svelte animations
 let section2InViewResolve;
 let section2InViewPromise = new Promise((resolve) => section2InViewResolve = resolve);
+const CapitalizedFirstName = capitalize(firstName);
 
 onMount(async () => {
 	// Wait for page to load
@@ -88,7 +89,7 @@ function section2IntroAnimations() {
 <div id="content-container" class="about" bind:this={aboutSection1Container}>
 	<div class="content-wrapper">
 		<h1 class="title" bind:this={title}>
-			The Name's<br>Jasmin
+			the name's<br>{$CapitalizedFirstName}
 		</h1>
 		<div bind:this={paragraph}>
 			<p class="paragraph">
