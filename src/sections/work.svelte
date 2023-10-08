@@ -5,7 +5,8 @@ import { onMount } from "svelte";
 import { fade } from "svelte/transition";
 import { ImageRenderer } from "../effects/work-slider/renderer";
 import { letterSlideIn, letterSlideOut, maskSlideIn, maskSlideOut, workImageIntro, workListIntro } from "../animations";
-import { isMobile, isWorkScroll, loadPagePromise, workAnchor, workItemsFetch, workScrollSpeed } from "../store";
+import { isMobile, isWorkScroll, loadPagePromise, workAnchor, workScrollSpeed, workItemsFetch,  fetchMediumArticlesFromAPI, articlesItemsFetch } from "../store";
+
 import { loadImage } from "../utils";
 
 /* Slider calculations and rendering */
@@ -105,11 +106,23 @@ const slider = new WorkSlider(); // workItems slider functionality
 
 onMount(async () => {
 
+	// // Fetch the list IDs
+	// await fetchMediumListsFromAPI();
+
+	// // Fetch details for each list item and update the store
+	// $listItemsFetch.lists && await fetchAllListDetails($listItemsFetch.lists);
+
+
 	// GPU Tier to decide if effects should be enabled
 	const gpuTier = await getGPUTier();
 	// Svelte store for checking if device is a mobile device
 	$isMobile = gpuTier.isMobile;
 
+	// Fetch articles from API
+	// fetchMediumArticlesFromAPI();
+	// data = await articlesItemsFetch;
+
+	// User mock json data (fetched from work-data.json)
 	data = await workItemsFetch;
 	await loadPagePromise;
 	$workAnchor = workContainer;
@@ -124,10 +137,6 @@ onMount(async () => {
 	// Intersection observer for scroll animations
 	animationObserver.observe(workContainer);
 });
-
-
-
-
 
 // Move slider to active item when it is active
 function toggleActiveItem(i) {
@@ -149,8 +158,6 @@ function titleSlide(node) {
 
 </script>
 
-
-
 <div id="content-container" class="work-click-area" style = "margin-top: 30vh;" bind:this="{workContainer}">
 	<div class="content-wrapper"
 		on:mousedown|preventDefault={slider.onHold}
@@ -166,7 +173,50 @@ function titleSlide(node) {
 				bind:this={listContainer}
 				class:hold={isMouseDown}>
 
+				<!-- {#await $articlesItemsFetch}
+					<p>Loading articles...</p>
+				{:then items}
+					{#each items as item, i}
+							<li>
+								<div class="list-item clickable passive"
+									class:ambient="{ currentActive !== i && currentActive !== null }"
+									class:active="{ currentActive === i }">
+
+									<div class="img-wrapper">
+										{#if item.details.image_url}
+											<img src="{item.details.image_url}" alt="{item.title} Background" on:dragstart|preventDefault draggable="false">
+										{:else}
+
+											<img src="path-to-your-placeholder-image.jpg" alt="Placeholder image">
+										{/if}
+									</div>
+									<div class="text-top-wrapper">
+										<p class="item-index">
+											{(i.toString().length > 1) ? (i+1) : "0"+(i+1).toString()}
+										</p>
+									</div>
+									<div class="text-wrapper">
+										<h1 class="item-title">
+											<span>
+												{item.title}
+											</span>
+										</h1>
+										<div class="button item-link" on:click={() => toggleActiveItem(i)}>
+											view
+										</div>
+									</div>
+								</div>
+							</li>
+					{/each}
+				{:catch error}
+					<p>There was an error loading the articles: {error.message}</p>
+				{/await} -->
+
 				<!-- Work items -->
+
+				<!-- {#await $articlesItemsFetch}
+					<p>Loading articles...</p>
+				{:then items} -->
 				{#await workItemsFetch then items}
 					{#each items as item, i}
 						<li use:workImageIntro={{ promise: inView, delay: i*30 }}>
@@ -176,7 +226,7 @@ function titleSlide(node) {
 								bind:this={ workItems[i] }>
 
 								<div class="img-wrapper">
-									{#await loadImage(`assets/imgs/work-back/${item.id}/cover.jpg`) then src}
+									{#await loadImage(item.image_url) then src}
 										<img bind:this={images[i]} src="{src}" on:dragstart|preventDefault draggable="false" alt="{item.title} Background">
 									{/await}
 								</div>
@@ -219,6 +269,7 @@ function titleSlide(node) {
 						</li>
 					{/each}
 				{/await}
+
 			</ul>
 		</div>
 

@@ -1,110 +1,482 @@
 [
     {
-        "id": "lcml",
-        "title": "Machine Learning and AI in Business Intelligence: Trends and Opportunities",
+        "id": "929491359a69",
+        "title": "AI and NLP Mastery: Dive into Python — Sentiment Analysis, NER, and More” 🚀🤖📊📜",
         "details": {
-            "description": "The integration of machine learning and artificial intelligence (AI) in business intelligence has brought forth a plethora of trends and opportunities. These cutting-edge technologies have revolutionized how businesses analyze data, gain insights, and make informed decisions. ",
-            "summary": "ML and AI in Business Intelligence"
+            "description": "Hello…Hello…! Let’s continue our journey of coding challenges because we’re already doing great. #FLOW.  It’s a reminder that learning can…",
+            "summary": "AI and NLP Mastery: Dive into Python — Sentiment Analysis, NER, and More” 🚀🤖📊📜"
         },
-        "date": "June 2023",
+        "date": "October 2023",
         "roles": [
-            "Artificial Intelligence",
-            "Machine Learning",
-            "sentiment analysis",
-            "Deep Learning"
+            "nlp",
+            "sentiment-analysis",
+            "machine-learning",
+            "artificial-intelligence",
+            "ai"
         ],
         "links": [
             {
                 "type": "web",
-                "text": "Visit Site",
-                "link": "https://ijcjournal.org/index.php/InternationalJournalOfComputer/article/view/2087"
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/ai-and-nlp-mastery-dive-into-python-sentiment-analysis-ner-and-more-929491359a69"
             }
-        ]
+        ],
+        "image_url": "https://miro.medium.com/1*9pqYTsLFQ4tikb5RNpp72w.jpeg"
     },
     {
-        "id": "v1",
-        "title": "Portfolio 2021",
+        "id": "8f808febe904",
+        "title": "From CNNs to DeepSpeech: Mastering AI Challenges in GANs, Transformers, Recommender Systems, LSTM…",
         "details": {
-            "description": "My personal portfolio website with a full showcase of my completed projects. Received the Awwwards Honorable Mention.",
-            "summary": "Personal Portfolio"
+            "description": "II wasted my whole day whining about something that wasn’t in my control. I feel foolish to waste my time and energy like that, but I am…",
+            "summary": "From CNNs to DeepSpeech: Mastering AI Challenges in GANs, Transformers, Recommender Systems, LSTM…"
         },
-        "date": "May 2021",
+        "date": "October 2023",
         "roles": [
-            "UI/UX Designer",
-            "Front-end Web Developer"
+            "transformers",
+            "deep-learning",
+            "voice-ai",
+            "neural-networks",
+            "artificial-intelligence"
         ],
         "links": [
             {
                 "type": "web",
-                "text": "Visit Site",
-                "link": "https://v1.musabhassan.com"
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/from-cnns-to-deepspeech-mastering-ai-challenges-in-gans-transformers-recommender-systems-lstm-8f808febe904"
             }
-        ]
-    },
-    {
-        "id": "kic",
-        "title": "Kelowna Islamic Center",
-        "details": {
-            "description": "A multi-platform solution consisting of mobile apps, a web app, and server-side solutions for Kelowna Islamic Center.",
-            "summary": "Multi-platform Solutions"
-        },
-        "date": "July 2019",
-        "roles": [
-            "UI/UX Designer",
-            "Mobile Developer w/ Flutter",
-            "Full-Stack Web Developer"
         ],
-        "links": [
-            {
-                "type": "android",
-                "text": "View on Google Play",
-                "link": "https://play.google.com/store/apps/details?id=com.kelownamasjid.android.app"
-            },
-            {
-                "type": "ios",
-                "text": "View on App Store",
-                "link": "https://apps.apple.com/us/app/kelowna-islamic-center/id1479503537?ls=1"
-            }
-        ]
+        "image_url": "https://miro.medium.com/1*6L7QHcfsJr9U4u1dfWXkYw.jpeg"
     },
     {
-        "id": "grillzzy",
-        "title": "Grillzzy Foods",
+        "id": "43a1261aaaf3",
+        "title": "Mastering Tech Interviews: CNNs, Seq2Seq, Faster R-CNN, and PPO — Unveiling the Path to Coding…",
         "details": {
-            "description": "Iconography, branding, and website for a Canadian meat and manufacturing processing start-up",
-            "summary": "Brand Website"
+            "description": "Well…Well…! After starting on coding challenges this morning, I feel like I can do more! Finally getting the hang of it. Hehe! I know many…",
+            "summary": "Mastering Tech Interviews: CNNs, Seq2Seq, Faster R-CNN, and PPO — Unveiling the Path to Coding…"
         },
-        "date": "Nov 2020",
+        "date": "October 2023",
         "roles": [
-            "Brand Designer",
-            "Web Designer",
-            "Front-End Web Developer"
+            "cnn",
+            "neural-networks",
+            "rnn",
+            "machine-learning",
+            "artificial-intelligence"
         ],
         "links": [
             {
                 "type": "web",
-                "text": "Visit Site",
-                "link": "https://grillzzy.com"
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/mastering-tech-interviews-cnns-seq2seq-faster-r-cnn-and-ppo-unveiling-the-path-to-coding-43a1261aaaf3"
             }
-        ]
+        ],
+        "image_url": "https://miro.medium.com/1*_n7Uu6L3eez52ZfImRUNAw.gif"
     },
     {
-        "id": "slickscroll",
-        "title": "SlickScroll",
+        "id": "ddc574d79bd0",
+        "title": "Coding Adventures: Sentiment Analysis, NLP, and Neural Networks Explored 🌐🔍",
         "details": {
-            "description": "An open-source library for developers to easily add smooth scrolling effects to their webpages",
-            "summary": "Personal Project"
+            "description": "Well…! I’ve started learning programming with an ML perspective and practicing my craft. There’s so much more to explore in ML, but some…",
+            "summary": "Coding Adventures: Sentiment Analysis, NLP, and Neural Networks Explored 🌐🔍"
         },
-        "date": "March 2021",
+        "date": "October 2023",
         "roles": [
-            "Maintainer"
+            "sentiment-analysis",
+            "nlp",
+            "neural-networks",
+            "machine-learning",
+            "artificial-intelligence"
         ],
         "links": [
             {
                 "type": "web",
-                "text": "View on Github",
-                "link": "https://github.com/Musab-Hassan/slickscroll"
+                "text": "Read More",
+                "link": "https://ai.plainenglish.io/coding-adventures-sentiment-analysis-nlp-and-neural-networks-explored-ddc574d79bd0"
             }
-        ]
+        ],
+        "image_url": "https://miro.medium.com/1*xZK8lnMLH0BsIF44aJI9ow.png"
+    },
+    {
+        "id": "b9becd825508",
+        "title": "Journey into Advanced Python & ML: Text Generation, Object Detection, and Reinforcement Learning…",
+        "details": {
+            "description": "Hey… Hey…! Many companies are integrating AI, but there are still many on the verge of committing to the use of AI. The market is already…",
+            "summary": "Journey into Advanced Python & ML: Text Generation, Object Detection, and Reinforcement Learning…"
+        },
+        "date": "October 2023",
+        "roles": [
+            "text-generation",
+            "object-detection",
+            "reinforcement-learning",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/journey-into-advanced-python-ml-text-generation-object-detection-and-reinforcement-learning-b9becd825508"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*3M_PY9Kiu0HSUJfoZJOCLQ.jpeg"
+    },
+    {
+        "id": "86fd6f4363c0",
+        "title": "🎨 Unleash Your Creativity with genAI Prototyping: Tips and Tricks",
+        "details": {
+            "description": "Hey… Hey… Hey…! Apart from the crazy programming and nerdy stuff, AI has some pretty amazing things to offer everyone. I know, I know…",
+            "summary": "🎨 Unleash Your Creativity with genAI Prototyping: Tips and Tricks"
+        },
+        "date": "October 2023",
+        "roles": [
+            "midjourney",
+            "prompt-engineering",
+            "next-gen-ai",
+            "chatgpt",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/unleash-your-creativity-with-genai-prototyping-tips-and-tricks-86fd6f4363c0"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*LG95CDorJwv15XAw5IlP9A.jpeg"
+    },
+    {
+        "id": "4751a5467514",
+        "title": "Beyond Basics: Tackling Advanced Python Challenges and Machine Learning Wonders 🚀🤖",
+        "details": {
+            "description": "Hello….Hello….! We meet again. Hehe! Once I start exploring something it's hard for me to put it down. IDK if it's a nagging nature or…",
+            "summary": "Beyond Basics: Tackling Advanced Python Challenges and Machine Learning Wonders 🚀🤖"
+        },
+        "date": "October 2023",
+        "roles": [
+            "data-structures",
+            "algorithms",
+            "neural-networks",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/beyond-basics-tackling-advanced-python-challenges-and-machine-learning-wonders-4751a5467514"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*39q0djU2uh8U2eVI8RTn7g.jpeg"
+    },
+    {
+        "id": "d1b85384c5d9",
+        "title": "Python Coding Challenges: Fun Exercises to Hone Your Skills 🐍💻",
+        "details": {
+            "description": "Well… Well…! I have so many things planned, and I want to seize opportunities with both hands. Sometimes, I feel incredibly ambitious…",
+            "summary": "Python Coding Challenges: Fun Exercises to Hone Your Skills 🐍💻"
+        },
+        "date": "October 2023",
+        "roles": [
+            "python",
+            "machine-learning",
+            "artificial-intelligence",
+            "ai",
+            "coding"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/python-coding-challenges-fun-exercises-to-hone-your-skills-d1b85384c5d9"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*h7UHQhWN6ll3xHl-rrDz1Q.jpeg"
+    },
+    {
+        "id": "aa304d23b2f3",
+        "title": "AI and Hollywood: Creativity vs.",
+        "details": {
+            "description": "Hello… Hello…! It’s the weekend, but I’m still here, and I had such a strong desire to write these articles. I just can’t switch off my…",
+            "summary": "AI and Hollywood: Creativity vs."
+        },
+        "date": "October 2023",
+        "roles": [
+            "deepfakes",
+            "artificial-intelligence",
+            "bill-ackman",
+            "hollywood",
+            "machine-learning"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/ai-and-hollywood-creativity-vs-aa304d23b2f3"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*PhcnV5KvNFPh93fTMnhvAg.jpeg"
+    },
+    {
+        "id": "a1cb9ea6842a",
+        "title": "AI Journeys Unveiled: Unmasking Tech Interview Challenges and Beyond",
+        "details": {
+            "description": "Love can become suffocating if actions don’t align. Life may have a thousand meanings, but we can only comprehend so much. As you grow…",
+            "summary": "AI Journeys Unveiled: Unmasking Tech Interview Challenges and Beyond"
+        },
+        "date": "September 2023",
+        "roles": [
+            "tech-interview",
+            "rnn",
+            "kmeans-clustering",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/ai-journeys-unveiled-unmasking-tech-interview-challenges-and-beyond-a1cb9ea6842a"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*Y1Aowzh4IlplnNjEDs44fQ.jpeg"
+    },
+    {
+        "id": "33efa6eecdf3",
+        "title": "🚀 OpenAI and Jony Ive in Talks with SoftBank to Create the “📱 iPhone of Artificial Intelligence”!",
+        "details": {
+            "description": "OpenAI, led by CEO Sam Altman, is in exciting discussions with former Apple design guru Sir Jony Ive and SoftBank’s visionary CEO…",
+            "summary": "🚀 OpenAI and Jony Ive in Talks with SoftBank to Create the “📱 iPhone of Artificial Intelligence”!"
+        },
+        "date": "September 2023",
+        "roles": [
+            "openai",
+            "softbank",
+            "jony-ive",
+            "artificial-intelligence",
+            "machine-learning"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/openai-and-jony-ive-in-talks-with-softbank-to-create-the-iphone-of-artificial-intelligence-33efa6eecdf3"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*Yvpe7o6x2iUQPXNPWE2ahA.jpeg"
+    },
+    {
+        "id": "9da396628d",
+        "title": "🤖 Meta’s AI Characters: A Glimpse into the Future of Social Interaction 🌐",
+        "details": {
+            "description": "Well…Well…Well…! Just when I think I am done for today, AI surprises me. In a world where technology and imagination collide, Meta, the…",
+            "summary": "🤖 Meta’s AI Characters: A Glimpse into the Future of Social Interaction 🌐"
+        },
+        "date": "September 2023",
+        "roles": [
+            "meta",
+            "facebook",
+            "meta-ai",
+            "ai-characters",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/metas-ai-characters-a-glimpse-into-the-future-of-social-interaction-9da396628d"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*StIdYxn0lrHD2vAnUx7UVw.jpeg"
+    },
+    {
+        "id": "8174e66315f8",
+        "title": "🚀 Advanced Machine Learning for Research: Developing a Transformer Model for Language…",
+        "details": {
+            "description": "Hello…Hello…! Weeks are going so fast, & so are we! At least it feels like I am chasing something and getting tired too, but I keep at it…",
+            "summary": "🚀 Advanced Machine Learning for Research: Developing a Transformer Model for Language…"
+        },
+        "date": "September 2023",
+        "roles": [
+            "nlp",
+            "language",
+            "transformers",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/advanced-machine-learning-for-research-developing-a-transformer-model-for-language-8174e66315f8"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*Nc8hP8eHsOeUvlolgGxjsw.jpeg"
+    },
+    {
+        "id": "dc03f4b4c49b",
+        "title": "🤖 Advanced Machine Learning Research: Building a CNN Model for Image Classification 📷",
+        "details": {
+            "description": "Well….Well….Well…! Happiness is all your hard work getting you somewhere. Humans are big examples of reinforcement-learning creatures. (No…",
+            "summary": "🤖 Advanced Machine Learning Research: Building a CNN Model for Image Classification 📷"
+        },
+        "date": "September 2023",
+        "roles": [
+            "image-classification",
+            "neural-networks",
+            "machine-learning",
+            "artificial-intelligence",
+            "ai"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/advanced-machine-learning-research-building-a-cnn-model-for-image-classification-dc03f4b4c49b"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*USFscjpU6TMnlInb_ZuU1g.jpeg"
+    },
+    {
+        "id": "73e178610cc1",
+        "title": "🔮 Unleash the Magic of Sentiment Analysis: Catch My Vibe with a Step-by-Step Python Guide 🧙‍♂️",
+        "details": {
+            "description": "Hey…Hey…Hey…! You know what they say about AI, right? They claim it’s all ‘no emotions, just algorithms.’ But guess what, sentiment…",
+            "summary": "🔮 Unleash the Magic of Sentiment Analysis: Catch My Vibe with a Step-by-Step Python Guide 🧙‍♂️"
+        },
+        "date": "September 2023",
+        "roles": [
+            "sentiment-analysis",
+            "brand-sentiment",
+            "emotion-analysis",
+            "opinion-mining",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/unleash-the-magic-of-sentiment-analysis-catch-my-vibe-with-a-step-by-step-python-guide-%EF%B8%8F-73e178610cc1"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*7yhbpf_nCSmaaoNKtDTpRA.png"
+    },
+    {
+        "id": "dae38931bc57",
+        "title": "🚀 ChatGPT’s Next Level: Talking, Seeing, and Understanding in Style! 🗣️👀",
+        "details": {
+            "description": "Ahhaaa! What an exciting day today! The Pixel 8 is getting what is being widely called the “Michael Scott” treatment for photos, with the…",
+            "summary": "🚀 ChatGPT’s Next Level: Talking, Seeing, and Understanding in Style! 🗣️👀"
+        },
+        "date": "September 2023",
+        "roles": [
+            "chatgpt",
+            "openai",
+            "voice-ai",
+            "multimodal-ai",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/chatgpts-next-level-talking-seeing-and-understanding-in-style-%EF%B8%8F-dae38931bc57"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*tP6JEtW_kbAKTDQX1HAZSg.jpeg"
+    },
+    {
+        "id": "3a3fd7b98bb5",
+        "title": "OpenAI Faces Dual Fronts: Authors Sue OpenAI for Copyright Infringement While Brain-Computer…",
+        "details": {
+            "description": "Hello…Hello…Hello…! In a fascinating juxtaposition of legal battles and scientific breakthroughs, OpenAI finds itself at the center of two…",
+            "summary": "OpenAI Faces Dual Fronts: Authors Sue OpenAI for Copyright Infringement While Brain-Computer…"
+        },
+        "date": "September 2023",
+        "roles": [
+            "openai",
+            "chatgpt",
+            "brain",
+            "copyright-infringement",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/openai-faces-dual-fronts-authors-sue-openai-for-copyright-infringement-while-brain-computer-3a3fd7b98bb5"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*GEHLEvdHLsKyy1QqQhvMaQ.jpeg"
+    },
+    {
+        "id": "94754376d0a1",
+        "title": "Mastering Deepfake Detection: Unleashing the Power of ResNet for Absolute Accuracy",
+        "details": {
+            "description": "Well…Well…Well..! Once we deep dive into something, it becomes addicting. I was just brushing up on my deepfake detection machine-learning…",
+            "summary": "Mastering Deepfake Detection: Unleashing the Power of ResNet for Absolute Accuracy"
+        },
+        "date": "September 2023",
+        "roles": [
+            "deepfakes",
+            "resnet",
+            "machine-learning",
+            "artificial-intelligence",
+            "ai"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/mastering-deepfake-detection-unleashing-the-power-of-resnet-for-absolute-accuracy-94754376d0a1"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*UbuWiU2SRRQzqNKtc2PBHA.png"
+    },
+    {
+        "id": "7144dce4f4ed",
+        "title": "Cracking the Code: Unmasking Deepfakes with EfficientNet — A Step-by-Step Guide",
+        "details": {
+            "description": "Hey…Hey…Hey…! Deepfake technology has evolved rapidly in recent years, making it increasingly challenging to distinguish real from…",
+            "summary": "Cracking the Code: Unmasking Deepfakes with EfficientNet — A Step-by-Step Guide"
+        },
+        "date": "September 2023",
+        "roles": [
+            "deepfakes",
+            "efficientnet",
+            "tensorflow",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/cracking-the-code-unmasking-deepfakes-with-efficientnet-a-step-by-step-guide-7144dce4f4ed"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*PbY_FE2L8xk1Ot6d3VPX8A.png"
+    },
+    {
+        "id": "ecb312da3874",
+        "title": "🤖 AI Unleashed: From Stephen Fry’s Cloned Voice to Speeding Tickets!",
+        "details": {
+            "description": "Hey…hey…hey…! In a whirlwind of technological revelations, the worlds of entertainment and local governance are being shaken by the…",
+            "summary": "🤖 AI Unleashed: From Stephen Fry’s Cloned Voice to Speeding Tickets!"
+        },
+        "date": "September 2023",
+        "roles": [
+            "ai-risk",
+            "aideepfake",
+            "deepfakes",
+            "machine-learning",
+            "artificial-intelligence"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Read More",
+                "link": "https://jasminbharadiya.medium.com/ai-unleashed-from-stephen-frys-cloned-voice-to-speeding-tickets-ecb312da3874"
+            }
+        ],
+        "image_url": "https://miro.medium.com/1*yreoxIdUTInTmHx_b9BBVQ.jpeg"
     }
 ]
